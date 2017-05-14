@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formsubmit.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <link rel="stylesheet" type="text/css" href="../Style/style.css">
+
+  </head>
+  
+  <body>
+  		<h2>欢迎注册</h2>
+  		<form action="#" method="" >
+  				<p>账号：<input type="text" maxlenght="10" value="输入账号"/> </p><!-- 文本输入框 -->
+  				<p>密码：<input type="password" maxlenght="10"/> </p><!-- 文本输入框 -->
+  				<p>性别：男<input type="radio" name="gender"/> 女<input type="radio" name="gender"/></p><!-- name要一样 -->
+  				<p>爱好：
+	  				<input type="checkbox" name="favorite"/>音乐<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  				<input type="checkbox" name="favorite"/>读书<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  				<input type="checkbox" name="favorite"/>篮球
+	  				
+  				</p>
+  				<p><button type="submit">注册</button></p>
+  		</form>
+  		<form action="#" method=" ">
+  				<table border="2" width="40%" align="center">
+  						<tr>
+  							<td><p>账号：</p></td>
+  							<td><input type="text" maxlength="10" value="请输入账号"/></td>
+  						
+  						</tr>
+  						<tr>
+  							<td><p>密码：</p></td>
+  							<td><input type="password" maxlength="10"/></td>
+  						</tr>
+  						<tr>		
+  							<td>性别：</td>
+  							<td>
+	  							男：<input type="radio" name="gender" checked="checked"/>
+	  							女：<input type="radio" name="gender"/>
+  							</td>
+  						</tr>
+  						<tr>
+  							<td>爱好：</td>
+  							<td>
+  								音乐<input type="checkbox" /><br/>
+  								读书<input type="checkbox" /><br/>
+  								篮球<input type="checkbox" />
+  							</td>
+  						</tr>
+  						<tr>
+  							<td colspan="2"  align="center">
+  								<button type="submit">注册</button>
+  								<button type="reset">重置</button>
+  								<button type="button">测试</button>
+  							</td>
+  							
+  						</tr>
+  				</table>
+  		</form>
+  		<!-- 表单外面的东西是不会提交到服务器的 -->
+  		<!-- lable -->
+  		<div align="center">
+  			<input type="checkbox" id="cb"/><lable for="cb">用户勾选即是同意</lable><!-- for点击字面上任何区域都可以 -->
+  		</div>
+  		
+  		
+  		
+  		<div align="center">
+  			<select>
+  				<option>北京市</option>
+  				<option selected="selected">菏泽市</option>
+  				<option>上海市</option>
+  				<option>青岛市</option>
+  			</select>
+  		</div>
+  		
+  		
+  		<!-- 显示<h1> 
+  			lt=less than
+  			gt=greater than
+  			nbsp=non-breaking space
+  		-->
+  			&lt;h1&gt;
+  			&copy;<!-- 版权符号 -->
+  			
+  			<div>
+	  			<!-- textarea文本 -->
+	  			<textarea rows="10" cols="100">这是文本域的默认值rows是可见的行数  </textarea>
+  			</div>
+
+    
+  </body>
+</html>

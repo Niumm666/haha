@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>简易计算器.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+    
+    <script type="text/javascript">
+    	function addition(){
+    		answer.value=parseInt(firstnum.value)+parseInt(secondnum.value);	
+    	}
+    	function subtraction(){
+    		answer.value=parseInt(firstnum.value)-parseInt(secondnum.value);
+    	}
+    	function multiplication(){
+    		
+    		answer.value=parseInt(firstnum.value)*parseInt(secondnum.value);
+    	}
+    	function division(){
+    		var firstnum=document.getElementById("firstnum");
+    		var secondnum=document.getElementById("secondnum");
+    		if(secondnum.value==0){alert("除数不能为0");}
+    		else{
+    			var div=parseInt(firstnum.value)/parseInt(secondnum.value);
+    			answer.value=div;
+    		}
+    		
+    	}
+    	
+    
+    
+    </script>
+
+  </head>
+  
+  <body>
+    <form action="">
+    	<table align="center" >
+	    	<tbody>
+	    		<tr>
+	    			<td align="center"><img alt="加载失败" src="../../images/购物计算器.png" /></td>
+	    			<td colspan="3" width="">购物简易计算器</td>
+	    		</tr>
+	    		<tr  height="40px">
+	    			<td>第一个数</td>
+	    			<td colspan="3" width=""><input type="text" id="firstnum"/></td>
+	    		</tr>
+	    		<tr height="40px">
+	    			<td >第二个数</td>
+	    			<td colspan="3" width=""><input type="text" id="secondnum"/></td>
+	    		</tr>
+	    		<tr height="40px">
+	    			<td><input type="button" value="+"  onClick="addition()"/></td>
+	    			<td><input type="button" value="-"  onClick="subtraction()"/></td>
+	    			<td><input type="button" value="*"  onClick="multiplication()"/></td>
+	    			<td><input type="button" value="/"  onClick="division()"/></td>
+	    			
+	    		</tr>
+	    		<tr height="40px">
+	    			<td>计算结果</td>
+	    			<td colspan="3" width=""><input type="text" id="answer" readonly="readonly"/></td>
+	    		</tr>
+	    		
+    		</tbody>
+    	
+    	</table>
+    </form>
+    
+    
+    
+    
+    
+    
+    
+    
+  </body>
+</html>

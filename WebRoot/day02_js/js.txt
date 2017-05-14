@@ -1,0 +1,10 @@
+alert(111);
+var num=9;
+console.log("hello js");
+console.log("hello"+"js"+"!");
+console.log(1+2+3);
+var str="10";
+num+parseInt(str);
+<td><input type="button" value="-" id="-" onClick=subtraction()/></td>
+	    			<td><input type="button" value="*" id="*" onClick=multiplication()/></td>
+	    			<td><input type="button" value="/" id="/" onClick=division()/></td>

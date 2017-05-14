@@ -1,0 +1,120 @@
+
+<!-- 唯一的根元素 -->
+<html>
+	<!-- 对网页的基本配置 -->
+	<head>
+		<title>Hello!</title>
+		<meta charset="utf-8"><!-- 编码 -->
+	</head>
+	
+	
+	
+	<!-- 网页显示的具体内容 -->
+	<body>
+		Hello World
+		<!-- 标题 -->
+		<h1>一级标题</h1>
+		<h2 id="h2">二级标题</h2><!-- id唯一标识h2  锚点 -->
+		<h6>六级标题</h6>
+		<!-- 段落 -->
+		<p>王老师是教学总监和java讲师</p>
+		<p>朱老师是java讲师</p>	
+		<!-- image   ..是返回上一级目录-->
+		<img width="270" height="125" alt="加载失败" src="../images/baidu.png">
+		<!-- a超链接
+			target="_blank" 在新窗口打开
+			title：悬停文字
+		-->
+		<a href="http://www.baidu.com" title="悬停文字" target="_blank">超链接文字</a>
+										               <!-- 以新窗口打开 -->
+										
+		<a href="#h2">回到h2</a>
+		<a href="#">回到网页最开始</a><!-- 只有#，是默认锚点 -->
+		
+		<!-- 列表 -->
+			<!-- 无序列表ol=unorder list增加无序列表的’语义‘ -->
+		<ul>
+			<li>北京</li>
+			<li>
+				山东
+				<ol>
+					<li>济南</li>
+					<li>菏泽</li><!-- 有序列表和无序列表可以嵌套 -->
+					<li>威海</li>
+				</ol>
+			</li>
+			<li>广州</li>
+			<li>深圳</li>
+		</ul>
+		
+			<!-- 有序列表 ol=order list -->
+		<ol>
+			<li>北京</li>
+			<li>上海</li>
+			<li>广州</li>
+			<li>深圳</li>
+		</ol>
+		<ol>
+			<li>北京</li>
+			<li>上海</li>
+			<li>广州</li>
+			<li>深圳</li>
+		</ol>
+		<div style="border: 2px solid ;border-color: #00CD00 ;">
+			<h3>国外的城市</h3>
+			<ul style="color: #00CD00">
+			<li>纽约</li>
+			<li>洛杉矶</li>
+			<li>巴黎</li>
+			<li>旧金山</li>
+			
+		</ul>
+		</div>
+		<div  style="border: 2px solid ;border-color:blue ;">
+			<h3>中国的城市</h3>
+			<ol style="color:blue">
+				<li>北京</li>
+				<li>上海</li>
+				<li>广州</li>
+				<li>深圳</li>
+		</ol>
+		</div>
+		<div style="color:#333;font-size: 12px">
+			Copyright © 2004 - 2017  京东JD.com 版权所有|消费者维权热线：4006067733经营证照		
+		</div>
+		
+		
+		<!-- 块级元素 ：单独成一行h,ul,ol,div
+			行内元素：不能单独成一行img,a，span,u下划线 i 斜体 b加粗
+		 -->
+		 
+		 
+		 山东省青岛市城阳区
+		<u>山东省</u><i>青岛市</i><span style="color:red">城阳</span>区<b>春阳路</b>
+		
+		<!-- 空格折叠多个空格默认成一个 &nbsp -->
+		<div>
+			锄禾日当&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;午<br/>
+			汗滴禾下&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;土<br/>
+			谁知盘中&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;餐<br/>
+			粒粒皆辛&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;苦
+		</div>
+		
+		 
+		 <!-- table 行<tr>  列<td>-->
+		 <table border="2" cellspacing="2" width="50%"><!-- 单元格之间的空隙    整个屏幕的%50 -->
+		 	<tr>
+		 		<td rowspan="2">王老师</td>
+		 		<td>朱老师</td>
+		 	</tr>
+		 	<tr>
+		 		<!--  <td>史老师</td>-->
+		 		<td>高老师</td>
+		 	</tr>
+		 	<tr>
+		 		<td colspan="2">牛瑞丽</td><!-- 跨越了两列成一列 -->
+		 	</tr>
+
+		 </table>
+		 </body>
+</html>
